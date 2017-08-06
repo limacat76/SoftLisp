@@ -1,6 +1,8 @@
+<<Any sufficiently complicated C or Fortran program contains an ad-hoc, informally-specified, bug-ridden, slow implementation of half of Common Lisp.>>
+
 # SoftLisp
 A simple embeddable lisp interpreter written in C++. 
-This is a for-study project.
+This is a for-study project, and will be used to provide scripting to SoftTracer.
 
 ## Features
 Currently SoftLisp is under development.
@@ -21,4 +23,4 @@ Currently SoftLisp is under development.
 ## Need help?
 You can contact me at limacat@gmail.com
 
-05.08.2017
+06.08.2017
