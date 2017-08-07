@@ -147,6 +147,8 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="Commands\Commands.cpp" />
+    <ClCompile Include="Commands\System.cpp" />
     <ClCompile Include="SoftLisp.cpp" />
   </ItemGroup>
   <ItemGroup>
@@ -154,6 +156,8 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Catalack.hpp" />
+    <ClInclude Include="Commands\Commands.h" />
+    <ClInclude Include="Commands\System.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

@@ -7,30 +7,13 @@
 #include <boost/algorithm/string.hpp>
 #include <boost/functional/factory.hpp>
 #include "Catalack.hpp"
+#include "Commands/System.h"
+#include "Commands/Commands.h"
 
 namespace options = boost::program_options;
 
-const std::string name = "SoftLisp";
-
-const std::string version = "0.0.0.1";
-
-class Command {
-public:
-	virtual void execute() = 0;
-};
-
-bool system_quit = false;
-
-class Quit : public Command {
-public:
-	void execute() {
-		system_quit = true;
-	}
-};
-
-typedef boost::function<Command*() > Command_Factory;
-
 int main(int argc, char *argv[]) {
+	System *system = &System::get_instance();
 	options::options_description desc("Allowed options");
 	desc.add_options()
 		("help", "produce an help message")
@@ -48,7 +31,7 @@ int main(int argc, char *argv[]) {
 	}
 
 	if (vm.count("version")) {
-		std::cout << name << "-" << version << "\n";
+		std::cout << system->name << "-" << system->version << "\n";
 		press_any_key();
 		return 1;
 	}
@@ -57,7 +40,7 @@ int main(int argc, char *argv[]) {
 	factories["quit"] = boost::factory<Quit*>();
 
 	std::cout << "Write 'quit' to exit\n";
-	while (!system_quit) {
+	while (!system->quit) {
 		std::cout << "> ";
 
 		std::string input;
@@ -76,4 +59,3 @@ int main(int argc, char *argv[]) {
 
     return 0;
 }
-
