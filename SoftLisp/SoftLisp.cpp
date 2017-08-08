@@ -9,7 +9,7 @@
 #include "Catalack.hpp"
 #include "Commands/System.h"
 #include "Commands/Commands.h"
-#include "../Library/Library.h"
+#include "../Library/System.h"
 
 namespace options = boost::program_options;
 
