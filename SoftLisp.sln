@@ -5,6 +5,8 @@ VisualStudioVersion = 15.0.26430.15
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "SoftLisp", "SoftLisp\SoftLisp.vcxproj", "{16B26767-D703-4188-9B29-B6E0CD56B2AB}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Library", "Library\Library.vcxproj", "{0E3ED8A6-CDDC-41D9-8340-458CFB390363}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -21,6 +23,14 @@ Global
 		{16B26767-D703-4188-9B29-B6E0CD56B2AB}.Release|x64.Build.0 = Release|x64
 		{16B26767-D703-4188-9B29-B6E0CD56B2AB}.Release|x86.ActiveCfg = Release|Win32
 		{16B26767-D703-4188-9B29-B6E0CD56B2AB}.Release|x86.Build.0 = Release|Win32
+		{0E3ED8A6-CDDC-41D9-8340-458CFB390363}.Debug|x64.ActiveCfg = Debug|x64
+		{0E3ED8A6-CDDC-41D9-8340-458CFB390363}.Debug|x64.Build.0 = Debug|x64
+		{0E3ED8A6-CDDC-41D9-8340-458CFB390363}.Debug|x86.ActiveCfg = Debug|Win32
+		{0E3ED8A6-CDDC-41D9-8340-458CFB390363}.Debug|x86.Build.0 = Debug|Win32
+		{0E3ED8A6-CDDC-41D9-8340-458CFB390363}.Release|x64.ActiveCfg = Release|x64
+		{0E3ED8A6-CDDC-41D9-8340-458CFB390363}.Release|x64.Build.0 = Release|x64
+		{0E3ED8A6-CDDC-41D9-8340-458CFB390363}.Release|x86.ActiveCfg = Release|Win32
+		{0E3ED8A6-CDDC-41D9-8340-458CFB390363}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

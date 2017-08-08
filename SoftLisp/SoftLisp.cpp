@@ -9,6 +9,7 @@
 #include "Catalack.hpp"
 #include "Commands/System.h"
 #include "Commands/Commands.h"
+#include "../Library/Library.h"
 
 namespace options = boost::program_options;
 
@@ -53,7 +54,7 @@ int main(int argc, char *argv[]) {
 			Command* x = value();
 			x->execute();
 		} else {
-			std::cout << "#ECHO# " << input << "\n";
+			std::cout << "#ECHO# " << fnLibrary() << input << "\n";
 		}
 	}
 
