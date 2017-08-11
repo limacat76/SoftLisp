@@ -1,21 +1,27 @@
 #include "stdafx.h"
 #include "System.h"
 
+namespace SoftLisp {
 
-// This is an example of an exported function.
-SOFTLISP_API int fnLibrary()
-{
-    return 42;
+	SOFTLISP_API int build_test() {
+		return 42;
+	}
+
+	Parser::Parser() {
+		;
+	}
+
+	std::vector<std::string> Parser::parse(std::string input) {
+		std::vector<std::string> result;
+		bool in_string = false;
+		std::string token = "";
+
+		for (int i = 0; i < input.size(); i++) {
+			token += input[i];
+		}
+
+		result.push_back(token);
+		return result;
+	}
+	
 }
-
-/*
-// This is an example of an exported variable
-SOFTLISP_API int nLibrary = 0;
-
-// This is the constructor of a class that has been exported.
-// see ConsoleApplication1.h for the class definition
-CConsoleApplication1::CConsoleApplication1()
-{
-    return;
-}
-*/

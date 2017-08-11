@@ -15,13 +15,20 @@ Visual Studio 2017 CE and running on Windows 10, and not yet testing it in other
 In order to compile the project, you need:
 - a binary distribution of Boost (for Boost::Parameters) in C:\SDL\local\boost_1_64_0
 
+Building requirements will change as soon as I am able to tackle the multi-platform requirements (sorry).
+
 ## What are you currently working on?
-Currently SoftLisp is under development.
+- Making a set of unit-tests for development and non-regression testing
 
 ## What is your future work?
-- To Be Defined
+- 1) a lisp interpreter
+- 2) make it so that any program can register functions, classes or variables to be accessed via Lisp
+- 3) start using this on softtracer for scripting: http://github.com/limacat76/SoftTracer
+- 4) when I can get a Linux machine I want to make both this project and softtracer buildable on linux+gcc, maybe via CMake
+
+Other common-lisp/scheme/whatever features that will be implemented may vary
 
 ## Need help?
-You can contact me at limacat@gmail.com
+You can contact me at limacat@gmail.com or via anonymous message at https://softtracer.sarahah.com/
 
-06.08.2017
+11.08.2017

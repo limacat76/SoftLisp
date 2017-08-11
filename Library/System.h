@@ -1,15 +1,20 @@
 #pragma once
+#include <vector>
 #include "Library.h"
 
-/*
-// This class is exported from the ConsoleApplication1.dll
-class CONSOLEAPPLICATION1_API CConsoleApplication1 {
-public:
-	CConsoleApplication1(void);
-	// TODO: add your methods here.
-};
+namespace SoftLisp {
 
-extern CONSOLEAPPLICATION1_API int nLibrary;
-*/
+	/*
+	extern CONSOLEAPPLICATION1_API int nLibrary;
+	*/
 
-SOFTLISP_API int fnLibrary();
+	SOFTLISP_API int build_test();
+
+	class SOFTLISP_API Parser {
+	public:
+		Parser();
+
+		std::vector<std::string> parse(std::string input);
+	};
+
+}

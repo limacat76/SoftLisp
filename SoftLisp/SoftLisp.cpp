@@ -54,7 +54,7 @@ int main(int argc, char *argv[]) {
 			Command* x = value();
 			x->execute();
 		} else {
-			std::cout << "#ECHO# " << fnLibrary() << input << "\n";
+			std::cout << "#ECHO# " << SoftLisp::build_test() << input << "\n";
 		}
 	}
 
